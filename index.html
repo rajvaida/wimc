@@ -17,6 +17,10 @@
     <script src="js/positions.js"></script>
     <script>
         $(document).one('deviceready', initApplication);
+
+        function exitFromApp() {
+            navigator.app.exitApp();
+        }
     </script>
 </head>
 
@@ -32,6 +36,7 @@
             <a href="map.html?requestType=set" id="set-car-position" data-role="button">Set position</a>
             <a href="map.html?requestType=get" id="find-car" data-role="button">Find car</a>
             <a href="positions.html" id="positions-history" data-role="button">Positions history</a>
+            <a href="#" id="close-app" onclick="exitFromApp" data-role="button">Positions history</a>
         </div>
     </div>
 </body>
